@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vitrinn — Websites for Mauritian businesses</title>
+<meta name="description" content="A fast, mobile website for your business in Mauritius, ready in 48 hours. WhatsApp button, Google Maps, English & French. From Rs 4,990.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf8f3;--ink:#1d1a16;--muted:#6b645a;--card:#fff;--line:#e8e1d6;--brand:#0f766e;--brand-ink:#fff;--accent:#f59e0b}
+@media (prefers-color-scheme:dark){:root{--bg:#14120f;--ink:#f3eee6;--muted:#a9a196;--card:#1d1a16;--line:#2e2a24;--brand:#2dd4bf;--brand-ink:#04211e}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font:700 22px Fraunces,serif;letter-spacing:-.02em;text-decoration:none}
+.logo span{color:var(--brand)}
+.lang{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:6px 12px;font:500 13px Inter;cursor:pointer}
+.hero{padding:56px 0 40px}
+h1{font:700 clamp(34px,6vw,58px)/1.05 Fraunces,serif;letter-spacing:-.03em;margin:0 0 18px;max-width:14ch}
+h2{font:700 clamp(26px,4vw,36px)/1.15 Fraunces,serif;letter-spacing:-.02em;margin:0 0 10px}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);max-width:52ch;margin:0 0 28px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--brand);color:var(--brand-ink);padding:14px 22px;border-radius:12px;font-weight:600;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.badge{display:inline-block;background:color-mix(in srgb,var(--accent) 18%,transparent);color:var(--ink);border-radius:99px;padding:5px 12px;font-size:13px;font-weight:600;margin-bottom:18px}
+section{padding:48px 0;border-top:1px solid var(--line)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.card h3{margin:0 0 6px;font-size:17px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.demo{text-decoration:none;display:block;transition:transform .15s}
+.demo:hover{transform:translateY(-3px)}
+.thumb{height:130px;border-radius:10px;margin-bottom:14px;display:flex;align-items:end;padding:12px;color:#fff;font:700 20px Fraunces,serif}
+.price{border:2px solid var(--brand)}
+.amt{font:700 40px Fraunces,serif;margin:6px 0}
+.amt small{font:500 15px Inter;color:var(--muted)}
+ul.ticks{list-style:none;padding:0;margin:14px 0 0}
+ul.ticks li{padding:5px 0 5px 26px;position:relative;font-size:15px}
+ul.ticks li:before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:700}
+.steps{counter-reset:s}.steps .card:before{counter-increment:s;content:counter(s);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--brand);color:var(--brand-ink);font-weight:700;margin-bottom:10px}
+details{border-bottom:1px solid var(--line);padding:14px 0}summary{font-weight:600;cursor:pointer}details p{color:var(--muted);margin:8px 0 0}
+footer{padding:40px 0 90px;color:var(--muted);font-size:14px}
+.fab{position:fixed;right:16px;bottom:16px;background:#25d366;color:#05351a;border-radius:99px;padding:14px 18px;font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+[data-fr]{display:none}html[lang=fr] [data-en]{display:none}html[lang=fr] [data-fr]{display:revert}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="#">Vitrinn<span>.</span></a>
+  <button class="lang" onclick="document.documentElement.lang=document.documentElement.lang==='fr'?'en':'fr'"><span data-en>Français</span><span data-fr>English</span></button>
+</header>
+
+<div class="hero">
+  <span class="badge"><span data-en>Launch offer — first 10 businesses</span><span data-fr>Offre de lancement — 10 premières entreprises</span></span>
+  <h1><span data-en>Your business, online in 48 hours.</span><span data-fr>Votre business en ligne en 48 heures.</span></h1>
+  <p class="lead"><span data-en>A fast, beautiful website your customers can find on Google and open on any phone — with a WhatsApp button so they message you directly. Made in Mauritius, for Mauritius.</span><span data-fr>Un site rapide et beau, visible sur Google et parfait sur mobile — avec un bouton WhatsApp pour que vos clients vous contactent directement. Fait à Maurice, pour Maurice.</span></p>
+  <div class="row">
+    <a class="btn" href="https://wa.me/23058247152?text=Hi%2C%20I%27d%20like%20a%20website%20for%20my%20business" target="_blank"><span data-en>Get my website</span><span data-fr>Je veux mon site</span> →</a>
+    <a class="btn ghost" href="#demos"><span data-en>See examples</span><span data-fr>Voir des exemples</span></a>
+  </div>
+</div>
+
+<section id="demos">
+  <h2><span data-en>Examples</span><span data-fr>Exemples</span></h2>
+  <p class="lead"><span data-en>Tap one — this is what your customers would see.</span><span data-fr>Touchez-en un — voici ce que vos clients verraient.</span></p>
+  <div class="grid">
+    <a class="card demo" href="demos/snack/"><div class="thumb" style="background:linear-gradient(135deg,#b45309,#f59e0b)">Snack Ti Kaz</div><h3><span data-en>Restaurant / snack</span><span data-fr>Restaurant / snack</span></h3><p><span data-en>Menu, prices, opening hours, order on WhatsApp.</span><span data-fr>Menu, prix, horaires, commande WhatsApp.</span></p></a>
+    <a class="card demo" href="demos/salon/"><div class="thumb" style="background:linear-gradient(135deg,#9d174d,#f472b6)">Belle Lumière</div><h3><span data-en>Salon / beauty</span><span data-fr>Salon / beauté</span></h3><p><span data-en>Services, price list, gallery, book an appointment.</span><span data-fr>Services, tarifs, galerie, prise de rendez-vous.</span></p></a>
+    <a class="card demo" href="demos/tuition/"><div class="thumb" style="background:linear-gradient(135deg,#1e3a8a,#60a5fa)">Prime Tuition</div><h3><span data-en>Tuition / classes</span><span data-fr>Leçons / cours</span></h3><p><span data-en>Subjects, grades, timetable, enrol on WhatsApp.</span><span data-fr>Matières, niveaux, horaires, inscription WhatsApp.</span></p></a>
+  </div>
+</section>
+
+<section>
+  <h2><span data-en>Simple pricing</span><span data-fr>Prix simple</span></h2>
+  <div class="grid">
+    <div class="card price">
+      <h3><span data-en>Starter website</span><span data-fr>Site Starter</span></h3>
+      <div class="amt">Rs 4,990 <small><span data-en>one-time</span><span data-fr>une fois</span></small></div>
+      <p><span data-en>Agencies charge Rs 50,000+. You get the essentials, done properly.</span><span data-fr>Les agences demandent Rs 50 000+. Vous avez l'essentiel, bien fait.</span></p>
+      <ul class="ticks">
+        <li data-en>One-page mobile website</li><li data-fr>Site une page, optimisé mobile</li>
+        <li data-en>WhatsApp, call &amp; Google Maps buttons</li><li data-fr>Boutons WhatsApp, appel et Google Maps</li>
+        <li data-en>English &amp; French</li><li data-fr>Anglais et français</li>
+        <li data-en>Free hosting — no monthly bill</li><li data-fr>Hébergement gratuit — pas de facture mensuelle</li>
+        <li data-en>Google Business Profile set up</li><li data-fr>Fiche Google Business configurée</li>
+        <li data-en>Ready in 48 hours</li><li data-fr>Prêt en 48 heures</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3><span data-en>Care plan (optional)</span><span data-fr>Suivi (optionnel)</span></h3>
+      <div class="amt">Rs 490 <small><span data-en>/ month</span><span data-fr>/ mois</span></small></div>
+      <p><span data-en>Send changes on WhatsApp — new prices, photos, offers — and they're live the same day.</span><span data-fr>Envoyez vos changements sur WhatsApp — prix, photos, promos — en ligne le jour même.</span></p>
+      <ul class="ticks">
+        <li data-en>Unlimited small edits</li><li data-fr>Modifications illimitées</li>
+        <li data-en>Your own .mu domain (at cost)</li><li data-fr>Votre domaine .mu (au prix coûtant)</li>
+        <li data-en>Cancel any time</li><li data-fr>Sans engagement</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span data-en>How it works</span><span data-fr>Comment ça marche</span></h2>
+  <div class="grid steps">
+    <div class="card"><h3><span data-en>Message us</span><span data-fr>Écrivez-nous</span></h3><p><span data-en>Send your business name, a few photos and your prices on WhatsApp.</span><span data-fr>Envoyez nom, quelques photos et vos prix sur WhatsApp.</span></p></div>
+    <div class="card"><h3><span data-en>See it first</span><span data-fr>Voyez d'abord</span></h3><p><span data-en>Within 48 hours you get a link to your finished site. Ask for changes.</span><span data-fr>Sous 48h, vous recevez le lien de votre site. Demandez des retouches.</span></p></div>
+    <div class="card"><h3><span data-en>Pay only if you love it</span><span data-fr>Payez seulement si ça vous plaît</span></h3><p><span data-en>Pay by Juice or bank transfer, and it goes live.</span><span data-fr>Payez par Juice ou virement, et il est en ligne.</span></p></div>
+  </div>
+</section>
+
+<section>
+  <h2>FAQ</h2>
+  <details><summary><span data-en>Why so cheap compared to agencies?</span><span data-fr>Pourquoi si peu cher ?</span></summary><p><span data-en>We focus on what small businesses actually need — one great page, not a 20-page project — and we use free, fast hosting, so there's no monthly server bill to pass on to you.</span><span data-fr>On se concentre sur l'essentiel — une excellente page — et on utilise un hébergement gratuit et rapide, donc pas de frais mensuels.</span></p></details>
+  <details><summary><span data-en>Do I need to pay before seeing it?</span><span data-fr>Dois-je payer avant de voir ?</span></summary><p><span data-en>No. You see the finished site first and only pay when you're happy.</span><span data-fr>Non. Vous voyez le site terminé et payez seulement si vous êtes satisfait.</span></p></details>
+  <details><summary><span data-en>Can I change things later?</span><span data-fr>Puis-je modifier plus tard ?</span></summary><p><span data-en>Yes — with the care plan, send changes any time. Without it, small edits are Rs 300 each.</span><span data-fr>Oui — avec le suivi, à tout moment. Sinon, Rs 300 par modification.</span></p></details>
+</section>
+
+<footer>© 2026 Vitrinn · Mauritius</footer>
+</div>
+<a class="fab" href="https://wa.me/23058247152?text=Hi%2C%20I%27d%20like%20a%20website%20for%20my%20business" target="_blank">WhatsApp</a>
+</body>
+</html>
